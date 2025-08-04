@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Helm | Own Your Workflow
 
-## Getting Started
 
-First, run the development server:
+Helm is the AI meeting assistant for thoughtful professionals, built on a foundation of transparency and respect for your data. We're creating a tool that works **for** you, not against you.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Our mission is to give professionals **sovereignty over their time, attention, and data.**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 🚀 Get Involved
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+*   **Join the Community:** We are looking for Founding Partners. [Request to Join](https://your-domain.com/#signup) <!-- Replace with your live domain later -->
+*   **Read our Philosophy:** [The Helm Manifesto](https://your-github-username.github.io/helm-manifesto/) <!-- Replace with your Manifesto link -->
+*   **Follow our Journey:** Use the hashtag **#OwnYourWorkflow** on Twitter & LinkedIn.
 
-## Learn More
+### ✨ Core Principles
 
-To learn more about Next.js, take a look at the following resources:
+1.  **Trust Through Transparency:** Our core is open source. You can always see how we handle your data.
+2.  **Privacy First:** No intrusive bots. No data selling. Ever.
+3.  **User in Control:** You decide what gets recorded, summarized, and shared.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This repository contains the source code for the official Helm landing page. Built with Next.js and Vercel.
