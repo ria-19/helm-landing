@@ -67,7 +67,7 @@ export default function PledgeSection() {
         <span style={styles.highlight} onMouseEnter={() => setHoveredKey('privacy')} onMouseLeave={() => setHoveredKey(null)}>
           privacy
         </span>{' '}
-        with a discreet, non-intrusive presence. These are the table stakes... and we're just getting started.
+        with a discreet, non-intrusive presence. These are the table stakes... and we&apos;re just getting started.
       </p>
     </section>
   );

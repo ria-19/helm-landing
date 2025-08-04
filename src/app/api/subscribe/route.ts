@@ -34,7 +34,7 @@ export async function POST(request: Request) {
       409  // Conflict: "User already registered"
     ];
 
-    const isGracefulError = gracefulErrorStatusCodes.includes((error as any).status);
+    const isGracefulError = gracefulErrorStatusCodes.includes((error as { status?: number }).status || 0);
 
     // If the error is NOT one of our graceful errors, it's a real, unexpected problem.
     if (!isGracefulError) {

@@ -6,6 +6,13 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Label } from 'recharts';
 
+// 1. FIX: Define a proper type for the chart data to remove 'any'.
+type ChartDataPoint = {
+  quarter: string;
+  solutions: number;
+  frustration: number;
+};
+
 const finalChartData = [
   { quarter: 'Q1 2024', solutions: 100, frustration: 7.5 },
   { quarter: 'Q2 2024', solutions: 120, frustration: 7.2 },
@@ -22,20 +29,24 @@ const ChartLoader = () => (
 
 const formatXAxisTick = (tickItem: string) => {
   const [quarter, year] = tickItem.split(' ');
+  // 2. FIX: Use ' for the apostrophe in the year tick.
   return `${quarter} '${year.slice(2)}`;
 };
 
 export default function ProblemChartSection() {
-  const [chartData, setChartData] = useState([]);
+  // 3. FIX: Use the new type for the state.
+  const [chartData, setChartData] = useState<ChartDataPoint[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setChartData(finalChartData as any);
+      // 4. FIX: Remove the 'as any' cast.
+      setChartData(finalChartData);
       setIsLoading(false);
     }, 1500);
     return () => clearTimeout(timer);
   }, []);
+
 
   return (
     <section style={styles.sectionContainer}>
@@ -133,7 +144,7 @@ export default function ProblemChartSection() {
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.3 }}
       >
-        I've Felt This Paradox. Let's Fix It.
+        I&apos;ve Felt This Paradox. Let&apos;s Fix It.
       </motion.a>
     </section>
   );
