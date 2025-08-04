@@ -10,8 +10,9 @@
   --accent-hover-color: #5f6f9a; 
   
   /* --- FINAL FONT VARIABLES --- */
-  --headline-font: 'Patrick Hand', cursive; 
-  --body-font: 'DM Sans', sans-serif;
+  /* --headline-font: 'Patrick Hand', cursive;  */
+  --headline-font: var(--font-quintessential); 
+  --body-font: var(--font-dm-sans);
 }
 
 * {
@@ -30,6 +31,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--headline-font);
+  font-weight: 400; 
   /* Patrick Hand is a single weight, so font-weight is not needed here */
   /* We can adjust letter-spacing for a slightly different feel if needed */
   letter-spacing: 0.5px;
