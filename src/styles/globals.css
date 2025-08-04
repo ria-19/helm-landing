@@ -1,0 +1,44 @@
+/* src/styles/globals.css */
+
+/* --- Font Imports from Google Fonts --- */
+/* We're importing:
+   - 'Patrick Hand' for the hand-drawn headline feel.
+   - 'DM Sans' for clean, readable body text.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap');
+
+/* --- CSS Variables (The "Theme") --- */
+:root {
+  --background-color: #F4F1EC; /* A warm, paper-like off-white */
+  --text-color: #3C3C3C; /* A softer black for text */
+  --accent-color: #E67E22; /* A warm, earthy orange for buttons */
+  --accent-hover-color: #D35400; /* A darker orange for hover effects */
+  
+  /* Defining our font families for easy use */
+  --headline-font: 'Patrick Hand', cursive; 
+  --body-font: 'DM Sans', sans-serif;
+}
+
+/* --- Global Styles & Resets --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  
+  /* This is the key to the hand-crafted aesthetic. 
+     It adds a subtle, seamless paper texture to the entire background.
+  */
+  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+}
+
+/* Set the headline font on all heading elements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--headline-font);
+  font-weight: 400; /* Hand-drawn fonts often look best at a normal weight */
+}
