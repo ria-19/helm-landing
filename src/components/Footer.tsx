@@ -23,8 +23,8 @@ export default function Footer() {
           <div style={styles.linksColumn}>
             {/* --- FINAL: Updated community links for trust and engagement --- */}
             <h4 style={styles.columnTitle}>Community</h4>
-            <a href="#" style={styles.link}>Our Manifesto</a>
-            <a href="#" style={styles.link}>Join our Slack</a>
+            <a href="https://ria-19.github.io/helm-manifesto/" style={styles.link}>Our Manifesto</a>
+            <a href="https://join.slack.com/t/helm-community/shared_invite/zt-3afbzs05j-gCNTnFCZB6TyOX1JKrHpyQ" style={styles.link}>Join our Slack</a>
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" style={styles.link}>View on GitHub</a>
           </div>
         </div>
