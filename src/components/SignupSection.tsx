@@ -72,7 +72,7 @@ export default function SignupSection() {
     >
       <h2 style={styles.headline}>Become a Founding Partner.</h2>
       <p style={styles.subHeadline}>
-        We're building Helm for—and with—a community of professionals who demand better. Join us to shape the future of respectful AI and be the first to reclaim control of your workflow.
+        We&apos;re building Helm for—and with—a community of professionals who demand better. Join us to shape the future of respectful AI and be the first to reclaim control of your workflow.
       </p>
       
       <form onSubmit={handleSubmit} style={styles.form}>

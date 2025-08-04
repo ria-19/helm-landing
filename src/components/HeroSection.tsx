@@ -73,7 +73,7 @@ export default function HeroSection() {
         
         <h1 style={styles.headline}>Take the Helm of Your Day.</h1>
         <p style={styles.subHeadline}>
-        The modern professional is drowning in digital noise. We're building the AI meeting assistant that reclaims your time, respectfully. No intrusive bots, just the clarity and focus you need to do your best work.
+        The modern professional is drowning in digital noise. We&apos;re building the AI meeting assistant that reclaims your time, respectfully. No intrusive bots, just the clarity and focus you need to do your best work.
         </p>
       </motion.div>
     </div>
